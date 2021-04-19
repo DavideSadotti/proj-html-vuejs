@@ -9,42 +9,46 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
+header, footer {
   background: linear-gradient(0deg, #01012f 10%, #0b1953 100%);
-  color: white;
-  height: 100vh;
 }
-header > div {
+
+header > div, footer > div {
   max-width: 1840px;
   padding: 0 100px;
   margin: auto;
 }
-header > div .navbar {
+
+header {
+  color: white;
+  height: 100vh;
+}
+header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   font-size: 18px;
 }
-header > div .navbar img, header > div .navbar li, header > div .navbar button {
+header .navbar img, header .navbar li, header .navbar button {
   cursor: pointer;
 }
-header > div .navbar ul {
+header .navbar ul {
   display: inline-block;
 }
-header > div .navbar ul li {
+header .navbar ul li {
   display: inline;
   margin: 0 15px;
   font-weight: lighter;
 }
-header > div .navbar ul li:hover {
+header .navbar ul li:hover {
   color: #F9636B;
 }
-header > div .navbar ul li:first-of-type {
+header .navbar ul li:first-of-type {
   font-weight: bold;
   color: #F9636B;
 }
-header > div .navbar button {
+header .navbar button {
   display: inline-block;
   color: white;
   font-size: 18px;
@@ -54,10 +58,10 @@ header > div .navbar button {
   background: linear-gradient(90deg, #03a7d3 0%, #1e3d82 100%);
   margin-left: 30px;
 }
-header > div .navbar button:hover {
+header .navbar button:hover {
   background: linear-gradient(90deg, #1e3d82 0%, #03a7d3 100%);
 }
-header > div .jumbotron {
+header .jumbotron {
   background-image: url("../img/jumbotron.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -65,7 +69,7 @@ header > div .jumbotron {
   height: calc(100vh - 100px);
   position: relative;
 }
-header > div .jumbotron > div {
+header .jumbotron > div {
   width: 600px;
   display: flex;
   flex-wrap: wrap;
@@ -73,38 +77,137 @@ header > div .jumbotron > div {
   top: 50%;
   transform: translateY(-50%);
 }
-header > div .jumbotron > div h1 {
+header .jumbotron > div h1 {
   font-size: 60px;
 }
-header > div .jumbotron > div h1 span {
+header .jumbotron > div h1 span {
   font-weight: lighter;
 }
-header > div .jumbotron > div p {
+header .jumbotron > div p {
   margin: 50px 0;
   color: #03A7D3E6;
 }
-header > div .jumbotron > div button:first-of-type {
+header .jumbotron > div button {
   display: inline-block;
   color: white;
   font-size: 18px;
   border: none;
   border-radius: 50px;
   padding: 15px 40px;
+  cursor: pointer;
+}
+header .jumbotron > div button:first-of-type {
   background: linear-gradient(90deg, #B6246E 0%, #F9636B 100%);
 }
-header > div .jumbotron > div button:first-of-type:hover {
+header .jumbotron > div button:first-of-type:hover {
   background: linear-gradient(90deg, #F9636B 0%, #B6246E 100%);
 }
-header > div .jumbotron > div button:last-of-type {
-  display: inline-block;
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 50px;
-  padding: 15px 40px;
+header .jumbotron > div button:last-of-type {
   background: linear-gradient(90deg, #03a7d3 0%, #1e3d82 100%);
   margin-left: 30px;
 }
-header > div .jumbotron > div button:last-of-type:hover {
+header .jumbotron > div button:last-of-type:hover {
   background: linear-gradient(90deg, #1e3d82 0%, #03a7d3 100%);
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+footer .subscribe {
+  position: relative;
+}
+footer .subscribe > div {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  background: linear-gradient(90deg, #B6246E 0%, #F9636B 100%);
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-radius: 40px;
+  align-items: center;
+}
+footer .subscribe > div > div {
+  margin: 0 50px;
+}
+footer .subscribe > div > div:last-of-type {
+  background-color: white;
+  padding: 5px 10px 5px 25px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+footer .subscribe > div > div:last-of-type input {
+  border: none;
+  outline: none;
+}
+footer .subscribe > div > div:last-of-type button {
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #03a7d3 0%, #1e3d82 100%);
+  cursor: pointer;
+}
+footer .subscribe > div > div:last-of-type button:hover {
+  background: linear-gradient(90deg, #1e3d82 0%, #03a7d3 100%);
+}
+footer .subscribe > div h2 {
+  font-size: 50px;
+}
+footer .link {
+  color: white;
+  display: flex;
+  padding: 200px 0 50px 0;
+}
+footer .link div:nth-child(n+2):not(:last-child) {
+  padding: 0 50px;
+}
+footer .link > div {
+  width: 25%;
+}
+footer .link > div img {
+  margin-bottom: 50px;
+}
+footer .link > div h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+footer .link > div p, footer .link > div li {
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .link > div li {
+  list-style: none;
+  margin: 15px 0;
+}
+footer .link > div li span {
+  color: white;
+}
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+footer .copyright div:first-of-type {
+  font-size: 14px;
+}
+footer .copyright div:last-of-type i {
+  margin-left: 40px;
+  font-size: 18px;
+  color: white;
+}
+footer .copyright::after {
+  content: "";
+  display: block;
+  width: calc(100vw - 17px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 80px;
 }

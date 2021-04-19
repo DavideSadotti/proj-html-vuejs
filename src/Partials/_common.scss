@@ -8,3 +8,13 @@ body{
   color: $textColor;
   font-family: 'Poppins', sans-serif;
 }
+
+header, footer{
+  background: linear-gradient(0deg, rgba(1,1,47,1) 10%, rgba(11,25,83,1) 100%);
+}
+
+header > div, footer > div{
+  max-width: $navbarContainer;
+  padding: 0 100px;
+  margin: auto;
+}

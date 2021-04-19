@@ -1,0 +1,121 @@
+footer{
+  color: $whiteOpacity;
+  position: relative;
+
+  .subscribe{
+    position: relative;
+
+    > div{
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      background: linear-gradient(90deg, $pinkColor 0%, $orangeColor 100%);
+      bottom: 0;
+      transform: translateY(50%);
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      border-radius: 40px;
+      align-items: center;
+
+      > div{
+        margin: 0 50px;
+      }
+
+      > div:last-of-type{
+        background-color: white;
+        padding: 5px 10px 5px 25px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+
+        input{
+          border: none;
+          outline: none;
+        }
+
+        button{
+          color: white;
+          font-size: 18px;
+          border: none;
+          border-radius: 50px;
+          padding: 10px 20px;
+          background: linear-gradient(90deg, $bluButton 0%, $darkBluButton 100%);
+          cursor: pointer;
+        }
+
+        button:hover{
+          background: linear-gradient(90deg, $darkBluButton 0%, $bluButton 100%);
+        }
+      }
+
+      h2{
+        font-size: 50px;
+      }
+    }
+  }
+
+  .link{
+    color: white;
+    display: flex;
+    padding: 200px 0 50px 0;
+
+    div:nth-child(n+2):not(:last-child){
+      padding: 0 50px;
+    }
+
+    > div{
+      width: 25%;
+
+      img{
+        margin-bottom: 50px;
+      }
+
+      h4{
+        font-size: $normalFont;
+        margin-bottom: 30px;
+      }
+
+      p, li{
+        color: $whiteOpacity;
+      }
+
+      li{
+        list-style: none;
+        margin: 15px 0;
+
+        span{
+          color: white;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+    div:first-of-type{
+      font-size: $miniFont;
+    }
+
+    div:last-of-type i{
+      margin-left: 40px;
+      font-size: $normalFont;
+      color: white;
+    }
+  }
+
+  .copyright::after{
+    content: "";
+    display: block;
+    width: calc(100vw - 17px);
+    border-bottom: 1px solid $whiteOpacity  ;
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+  }
+}

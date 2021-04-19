@@ -1,60 +1,54 @@
 header{
-  background: linear-gradient(0deg, rgba(1,1,47,1) 10%, rgba(11,25,83,1) 100%);
   color: white;
   height: 100vh;
 
-  > div{
-    max-width: $navbarContainer;
-    padding: 0 100px;
-    margin: auto;
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-size: $normalFont;
 
-    .navbar{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 100px;
-      font-size: $normalFont;
+    img, li, button{
+      cursor: pointer;
+    }
 
-      img, li, button{
-        cursor: pointer;
+    ul{
+      display: inline-block;
+
+      li{
+        display: inline;
+        margin: 0 15px;
+        font-weight: lighter;
       }
 
-      ul{
-        display: inline-block;
-
-        li{
-          display: inline;
-          margin: 0 15px;
-          font-weight: lighter;
-        }
-
-        li:hover{
-          color: $orangeColor;
-        }
-
-        li:first-of-type{
-          font-weight: bold;
-          color: $orangeColor;
-        }
+      li:hover{
+        color: $orangeColor;
       }
 
-      button{
-        display: inline-block;
-        color: white;
-        font-size: 18px;
-        border: none;
-        border-radius: 50px;
-        padding: 10px 20px;
-        background: linear-gradient(90deg, $bluButton 0%, $darkBluButton 100%);
-        margin-left: 30px;
-      }
-
-      button:hover{
-        background: linear-gradient(90deg, $darkBluButton 0%, $bluButton 100%);
+      li:first-of-type{
+        font-weight: bold;
+        color: $orangeColor;
       }
     }
 
-    .jumbotron{
+    button{
+      display: inline-block;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, $bluButton 0%, $darkBluButton 100%);
+      margin-left: 30px;
+    }
+
+    button:hover{
+      background: linear-gradient(90deg, $darkBluButton 0%, $bluButton 100%);
+    }
+  }
+
+  .jumbotron{
       background-image: url('../img/jumbotron.png');
       background-repeat: no-repeat;
       background-position: right;
@@ -84,13 +78,17 @@ header{
           color: $bluColor;
         }
 
-        button:first-of-type{
+        button{
           display: inline-block;
           color: white;
           font-size: 18px;
           border: none;
           border-radius: 50px;
           padding: 15px 40px;
+          cursor: pointer;
+        }
+
+        button:first-of-type{
           background: linear-gradient(90deg, $pinkColor 0%, $orangeColor 100%);
         }
 
@@ -99,12 +97,6 @@ header{
         }
 
         button:last-of-type{
-          display: inline-block;
-          color: white;
-          font-size: 18px;
-          border: none;
-          border-radius: 50px;
-          padding: 15px 40px;
           background: linear-gradient(90deg, $bluButton 0%, $darkBluButton 100%);
           margin-left: 30px;
 
@@ -115,5 +107,4 @@ header{
         }
       }
     }
-  }
 }
