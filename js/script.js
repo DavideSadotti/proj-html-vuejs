@@ -10,6 +10,28 @@ var app = new Vue(
         'Contact',
         'Portfolio'
       ],
+      whatWeDo:[
+        {
+          image: 'img/group-1.png',
+          title: 'Data Analysis',
+          text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.'
+        },
+        {
+          image: 'img/group-2.png',
+          title: 'SEO Optimization',
+          text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.'
+        },
+        {
+          image: 'img/group-3.png',
+          title: 'Security Data',
+          text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.'
+        },
+        {
+          image: 'img/group-4.png',
+          title: 'Branding Strategy',
+          text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.'
+        }
+      ],
       social:[
         'instagram',
         'linkedin-in',

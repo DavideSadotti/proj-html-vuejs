@@ -13,7 +13,7 @@ header, footer {
   background: linear-gradient(0deg, #01012f 10%, #0b1953 100%);
 }
 
-header > div, footer > div {
+header > div, footer > div, .whatWe {
   max-width: 1840px;
   padding: 0 100px;
   margin: auto;
@@ -108,6 +108,52 @@ header .jumbotron > div button:last-of-type {
 }
 header .jumbotron > div button:last-of-type:hover {
   background: linear-gradient(90deg, #1e3d82 0%, #03a7d3 100%);
+}
+
+.whatWe {
+  text-align: center;
+}
+.whatWe > div:first-of-type {
+  margin: 100px 0;
+}
+.whatWe > div:first-of-type p:first-of-type {
+  color: #F9636B;
+  font-size: 18px;
+}
+.whatWe > div:first-of-type h2 {
+  font-size: 50px;
+}
+.whatWe > div:first-of-type h2 span {
+  font-weight: lighter;
+}
+.whatWe > div:last-of-type {
+  display: flex;
+  margin: 100px 0;
+}
+.whatWe > div:last-of-type > div {
+  width: 25%;
+  padding: 0 50px;
+  text-align: center;
+}
+.whatWe > div:last-of-type > div img {
+  height: 130px;
+}
+.whatWe > div:last-of-type > div h3 {
+  font-size: 25px;
+  margin: 80px 0 40px;
+}
+.whatWe > div:last-of-type > div p {
+  font-weight: lighter;
+}
+.whatWe button {
+  background: linear-gradient(340deg, #f9636b 0%, #b6246e 100%);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 50px;
+  box-shadow: 0px 0px 40px 0px #F9636B;
+  margin: 80px 0;
 }
 
 footer {
