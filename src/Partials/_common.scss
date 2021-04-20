@@ -9,12 +9,40 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-header, footer{
+header, footer, .growBusiness{
   background: linear-gradient(0deg, rgba(1,1,47,1) 10%, rgba(11,25,83,1) 100%);
 }
 
-header > div, footer > div, .whatWe{
+header > div, footer > div, .whatWe, .growBusiness > div{
   max-width: $container;
   padding: 0 100px;
   margin: auto;
+}
+
+.jumbotron button, .growBusiness button{
+  display: inline-block;
+  color: white;
+  font-size: $normalFont;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+.jumbotron button:first-of-type, .growBusiness button:first-of-type{
+  background: linear-gradient(90deg, $pinkColor 0%, $orangeColor 100%);
+}
+
+.jumbotron button:first-of-type:hover, .growBusiness button:first-of-type:hover{
+  background: linear-gradient(90deg, $orangeColor 0%, $pinkColor 100%);
+}
+
+.jumbotron button:last-of-type, .growBusiness button:last-of-type{
+  background: linear-gradient(90deg, $bluButton 0%, $darkBluButton 100%);
+  margin-left: 30px;
+
+}
+
+.jumbotron button:last-of-type:hover, .growBusiness button:last-of-type:hover{
+  background: linear-gradient(90deg, $darkBluButton 0%, $bluButton 100%);
 }

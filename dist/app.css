@@ -9,14 +9,41 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header, footer {
+header, footer, .growBusiness {
   background: linear-gradient(0deg, #01012f 10%, #0b1953 100%);
 }
 
-header > div, footer > div, .whatWe {
+header > div, footer > div, .whatWe, .growBusiness > div {
   max-width: 1840px;
   padding: 0 100px;
   margin: auto;
+}
+
+.jumbotron button, .growBusiness button {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+.jumbotron button:first-of-type, .growBusiness button:first-of-type {
+  background: linear-gradient(90deg, #B6246E 0%, #F9636B 100%);
+}
+
+.jumbotron button:first-of-type:hover, .growBusiness button:first-of-type:hover {
+  background: linear-gradient(90deg, #F9636B 0%, #B6246E 100%);
+}
+
+.jumbotron button:last-of-type, .growBusiness button:last-of-type {
+  background: linear-gradient(90deg, #03a7d3 0%, #1e3d82 100%);
+  margin-left: 30px;
+}
+
+.jumbotron button:last-of-type:hover, .growBusiness button:last-of-type:hover {
+  background: linear-gradient(90deg, #1e3d82 0%, #03a7d3 100%);
 }
 
 header {
@@ -87,28 +114,6 @@ header .jumbotron > div p {
   margin: 50px 0;
   color: #03A7D3E6;
 }
-header .jumbotron > div button {
-  display: inline-block;
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 50px;
-  padding: 15px 40px;
-  cursor: pointer;
-}
-header .jumbotron > div button:first-of-type {
-  background: linear-gradient(90deg, #B6246E 0%, #F9636B 100%);
-}
-header .jumbotron > div button:first-of-type:hover {
-  background: linear-gradient(90deg, #F9636B 0%, #B6246E 100%);
-}
-header .jumbotron > div button:last-of-type {
-  background: linear-gradient(90deg, #03a7d3 0%, #1e3d82 100%);
-  margin-left: 30px;
-}
-header .jumbotron > div button:last-of-type:hover {
-  background: linear-gradient(90deg, #1e3d82 0%, #03a7d3 100%);
-}
 
 .whatWe {
   text-align: center;
@@ -154,6 +159,46 @@ header .jumbotron > div button:last-of-type:hover {
   padding: 15px 50px;
   box-shadow: 0px 0px 40px 0px #F9636B;
   margin: 80px 0;
+}
+
+.growBusiness > div {
+  display: flex;
+}
+.growBusiness > div > div:first-of-type {
+  width: 50%;
+}
+.growBusiness > div > div > div:first-of-type {
+  position: relative;
+  padding-left: 100px;
+}
+.growBusiness > div > div > div:first-of-type img:first-of-type {
+  position: absolute;
+  top: 200px;
+  left: 145px;
+  width: 400px;
+  z-index: 10;
+}
+.growBusiness > div > div > div:first-of-type img:last-of-type {
+  width: 400px;
+  position: absolute;
+  top: 160px;
+  z-index: 5;
+}
+.growBusiness > div > div:last-of-type {
+  color: white;
+  width: 50%;
+  padding: 200px 60px;
+}
+.growBusiness > div > div:last-of-type h2 {
+  font-size: 60px;
+}
+.growBusiness > div > div:last-of-type h2 span {
+  font-weight: lighter;
+}
+.growBusiness > div > div:last-of-type p:last-of-type {
+  color: #03A7D3E6;
+  font-weight: lighter;
+  margin: 50px 0;
 }
 
 footer {

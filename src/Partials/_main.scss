@@ -53,3 +53,55 @@
     margin: 80px 0;
   }
 }
+
+.growBusiness{
+
+  > div{
+    display: flex;
+
+    > div:first-of-type{
+      width: 50%;
+    }
+
+    > div > div:first-of-type{
+      position: relative;
+      padding-left: 100px;
+
+      img:first-of-type{
+        position: absolute;
+        top: 200px;
+        left: 145px;
+        width: 400px;
+        z-index: 10;
+      }
+
+      img:last-of-type{
+        width: 400px;
+        position: absolute;
+        top: 160px;
+        z-index: 5;
+      }
+    }
+
+    > div:last-of-type{
+      color: white;
+      width: 50%;
+      padding: 200px 60px;
+
+      h2{
+        font-size: $bigFont;
+
+        span{
+          font-weight: lighter;
+        }
+      }
+
+      p:last-of-type{
+        color: $bluColor;
+        font-weight: lighter;
+        margin: 50px 0;
+      }
+    }
+  }
+
+}
