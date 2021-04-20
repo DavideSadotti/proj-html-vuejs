@@ -32,6 +32,38 @@ var app = new Vue(
           text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.'
         }
       ],
+      priceList:[
+        {
+          title: 'Designing',
+          what: 'PROCESS',
+          price: 40,
+          creative: 'Design Enabled',
+          vibrant: 'Color Usage',
+          eye: 'Catching Design',
+          extreme: 'Typography',
+          exceptional: 'Design'
+        },
+        {
+          title: 'Developing',
+          what: 'PRODUCT',
+          price: 60,
+          creative: 'Design Enabled',
+          vibrant: 'Color Usage',
+          eye: 'Catching Design',
+          extreme: 'Typography',
+          exceptional: 'Design'
+        },
+        {
+          title: 'Supporting',
+          what: 'CLIENTS',
+          price: 80,
+          creative: 'Design Enabled',
+          vibrant: 'Color Usage',
+          eye: 'Catching Design',
+          extreme: 'Typography',
+          exceptional: 'Design'
+        }
+      ],
       social:[
         'instagram',
         'linkedin-in',
