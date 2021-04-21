@@ -196,7 +196,7 @@
       > p{
         font-size: 300px;
         position: absolute;
-        top: -110px;
+        top: -108px;
         right: -20px;
         font-weight: bold;
         color: rgba(0,0,0,0.1);
@@ -292,6 +292,112 @@
 
     .active{
       width: 49%;
+      background-image: url('../img/blog.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      position: relative;
+
+      > div:first-of-type{
+        width: 70%;
+        align-self: flex-end;
+        z-index: 20;
+
+        h3{
+          margin: 15px 0;
+        }
+      }
+
+      > div:last-of-type{
+        width: 30%;
+        align-self: flex-end;
+        z-index: 20;
+      }
+    }
+
+    .active::after{
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,.5);
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 25px;
+    }
+  }
+}
+
+.testimonial{
+  > div:first-of-type{
+    text-align: center;
+    width: 700px;
+    margin: auto;
+
+    p:first-of-type{
+      color: $orangeColor;
+    }
+
+    h2{
+      font-size: $titleFont;
+
+      span{
+        font-weight: lighter;
+      }
+    }
+  }
+
+  > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+
+    > div{
+      width: 30%;
+      text-align: center;
+
+      img{
+        width: 105px;
+        background-color: $pinkColor;
+        border-radius: 50px;
+        padding: 4px;
+      }
+
+      > div{
+        position: relative;
+        margin: 50px 0;
+
+        i{
+          background: linear-gradient(0deg, rgba(249,99,107,1) 0%, rgba(182,36,110,1) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        p{
+          font-size: 200px;
+          font-style: italic;
+          position: absolute;
+        }
+      }
+
+
+      h4{
+        margin: 25px 0 10px;
+      }
+    }
+  }
+
+  > div:last-of-type{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    margin: 100px 0 150px;
+
+    img{
+      align-self: center;
     }
   }
 }

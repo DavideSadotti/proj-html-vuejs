@@ -13,7 +13,7 @@ header, footer, .growBusiness {
   background: linear-gradient(0deg, #01012f 10%, #0b1953 100%);
 }
 
-header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type, .blog {
+header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type, .blog, .testimonial {
   max-width: 1840px;
   padding: 0 100px;
   margin: auto;
@@ -277,7 +277,7 @@ header .jumbotron > div p {
 .priceList > div:last-of-type > div > p {
   font-size: 300px;
   position: absolute;
-  top: -110px;
+  top: -108px;
   right: -20px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.1);
@@ -354,6 +354,93 @@ header .jumbotron > div p {
 }
 .blog > div:last-of-type .active {
   width: 49%;
+  background-image: url("../img/blog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+}
+.blog > div:last-of-type .active > div:first-of-type {
+  width: 70%;
+  align-self: flex-end;
+  z-index: 20;
+}
+.blog > div:last-of-type .active > div:first-of-type h3 {
+  margin: 15px 0;
+}
+.blog > div:last-of-type .active > div:last-of-type {
+  width: 30%;
+  align-self: flex-end;
+  z-index: 20;
+}
+.blog > div:last-of-type .active::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+}
+
+.testimonial > div:first-of-type {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+.testimonial > div:first-of-type p:first-of-type {
+  color: #F9636B;
+}
+.testimonial > div:first-of-type h2 {
+  font-size: 50px;
+}
+.testimonial > div:first-of-type h2 span {
+  font-weight: lighter;
+}
+.testimonial > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.testimonial > div:nth-child(2) > div {
+  width: 30%;
+  text-align: center;
+}
+.testimonial > div:nth-child(2) > div img {
+  width: 105px;
+  background-color: #B6246E;
+  border-radius: 50px;
+  padding: 4px;
+}
+.testimonial > div:nth-child(2) > div > div {
+  position: relative;
+  margin: 50px 0;
+}
+.testimonial > div:nth-child(2) > div > div i {
+  background: linear-gradient(0deg, #f9636b 0%, #b6246e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.testimonial > div:nth-child(2) > div > div p {
+  font-size: 200px;
+  font-style: italic;
+  position: absolute;
+}
+.testimonial > div:nth-child(2) > div h4 {
+  margin: 25px 0 10px;
+}
+.testimonial > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  margin: 100px 0 150px;
+}
+.testimonial > div:last-of-type img {
+  align-self: center;
 }
 
 footer {
