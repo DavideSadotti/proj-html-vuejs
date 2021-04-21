@@ -19,7 +19,7 @@ header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-
   margin: auto;
 }
 
-.jumbotron button, .growBusiness button {
+.jumbotron button, .growBusiness button, .priceList button {
   display: inline-block;
   color: white;
   font-size: 18px;
@@ -203,7 +203,7 @@ header .jumbotron > div p {
 
 .priceList {
   background: linear-gradient(90deg, #0b1953 0%, #020331 100%);
-  height: 700px;
+  height: 750px;
   color: white;
 }
 .priceList > div:first-of-type {
@@ -230,9 +230,74 @@ header .jumbotron > div p {
   border-radius: 25px;
   color: black;
   text-align: center;
+  width: 31%;
+  box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.priceList > div:last-of-type > div > div:first-of-type {
+  margin: 50px 0;
+}
+.priceList > div:last-of-type > div > div:first-of-type h3 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.priceList > div:last-of-type > div > div:first-of-type p {
+  font-weight: 500;
+}
+.priceList > div:last-of-type > div > div:last-of-type {
+  margin: 50px auto;
+  width: 30%;
+}
+.priceList > div:last-of-type > div > div:last-of-type span:first-of-type {
+  float: left;
+}
+.priceList > div:last-of-type > div > div:last-of-type p {
+  font-size: 90px;
+  font-weight: bold;
 }
 .priceList > div:last-of-type > div li {
   list-style: none;
+  margin: 10px 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+.priceList > div:last-of-type > div li span {
+  font-weight: bold;
+  color: black;
+}
+.priceList > div:last-of-type > div button {
+  background: linear-gradient(0deg, #f9636b 0%, #b6246e 100%);
+  font-weight: bold;
+  box-shadow: 0px 0px 30px 0px #F9636B;
+  margin: 50px 0;
+}
+.priceList > div:last-of-type > div button i {
+  margin-left: 40px;
+}
+.priceList > div:last-of-type > div > p {
+  font-size: 300px;
+  position: absolute;
+  top: -110px;
+  right: -20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1);
+}
+.priceList > div:last-of-type > div:nth-child(2) {
+  background: linear-gradient(90deg, #b6246e 0%, #f9636b 100%);
+  color: white;
+}
+.priceList > div:last-of-type > div:nth-child(2) li {
+  color: rgba(255, 255, 255, 0.7);
+}
+.priceList > div:last-of-type > div:nth-child(2) li span {
+  color: white;
+}
+.priceList > div:last-of-type > div:nth-child(2) button {
+  box-shadow: none;
+  background: white;
+  color: #F9636B;
+}
+.priceList > div:last-of-type > div:nth-child(2) > p {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 footer {

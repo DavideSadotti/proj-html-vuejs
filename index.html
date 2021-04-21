@@ -89,9 +89,15 @@
         </div>
         <div>
           <div v-for="item in priceList">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.what }}</p>
-            <p>$ {{ item.price }} Per Month</p>
+            <div>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.what }}</p>
+            </div>
+            <div>
+              <span>$</span>
+              <p>{{ item.price }}</p>
+              <span>Per Month</span>
+            </div>
             <ul>
               <li><span>Creative</span> {{ item.creative }}</li>
               <li><span>Vibrant</span> {{ item.vibrant }}</li>
@@ -99,14 +105,16 @@
               <li><span>Extreme</span> {{ item.extreme }}</li>
               <li><span>Exceptional</span> {{ item.exceptional }}</li>
             </ul>
-            <button type="button"></button>
+            <button type="button">Order Now <i class="fas fa-long-arrow-alt-right"></i></button>
+            <p>{{ item.price }}</p>
           </div>
         </div>
       </div>
+      <div class="blog"></div>
     </main>
 
     <!-- DIV TEMPORANEO -->
-    <div style="height:500px"></div>
+    <div style="height:700px"></div>
     <!-- PIE' DI PAGINA -->
     <footer>
       <div>
