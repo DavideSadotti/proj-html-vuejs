@@ -13,13 +13,13 @@ header, footer, .growBusiness{
   background: linear-gradient(0deg, rgba(1,1,47,1) 10%, rgba(11,25,83,1) 100%);
 }
 
-header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type{
+header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type, .blog{
   max-width: $container;
   padding: 0 100px;
   margin: auto;
 }
 
-.jumbotron button, .growBusiness button, .priceList button{
+.jumbotron button, .growBusiness button, .priceList button, .blog button{
   display: inline-block;
   color: white;
   font-size: $normalFont;

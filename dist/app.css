@@ -13,13 +13,13 @@ header, footer, .growBusiness {
   background: linear-gradient(0deg, #01012f 10%, #0b1953 100%);
 }
 
-header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type {
+header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type, .blog {
   max-width: 1840px;
   padding: 0 100px;
   margin: auto;
 }
 
-.jumbotron button, .growBusiness button, .priceList button {
+.jumbotron button, .growBusiness button, .priceList button, .blog button {
   display: inline-block;
   color: white;
   font-size: 18px;
@@ -159,6 +159,7 @@ header .jumbotron > div p {
   padding: 15px 50px;
   box-shadow: 0px 0px 40px 0px #F9636B;
   margin: 80px 0;
+  cursor: pointer;
 }
 
 .growBusiness > div {
@@ -298,6 +299,61 @@ header .jumbotron > div p {
 }
 .priceList > div:last-of-type > div:nth-child(2) > p {
   color: rgba(255, 255, 255, 0.1);
+}
+
+.blog:before {
+  content: "";
+  display: block;
+  height: 500px;
+}
+
+.blog > div:first-of-type {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+.blog > div:first-of-type p:first-of-type {
+  color: #F9636B;
+}
+.blog > div:first-of-type h2 {
+  font-size: 50px;
+}
+.blog > div:first-of-type h2 span {
+  font-weight: lighter;
+}
+.blog > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.blog > div:last-of-type > div {
+  width: 23%;
+  background: linear-gradient(315deg, #173270 0%, #030331 70%);
+  border-radius: 25px;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog > div:last-of-type > div p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.blog > div:last-of-type > div i {
+  font-size: 3px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.blog > div:last-of-type > div h3 {
+  margin: 25px 0;
+}
+.blog > div:last-of-type > div button {
+  color: black;
+  align-self: flex-end;
+  margin-top: 25px;
+}
+.blog > div:last-of-type .active {
+  width: 49%;
 }
 
 footer {

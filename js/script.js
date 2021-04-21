@@ -64,6 +64,26 @@ var app = new Vue(
           exceptional: 'Design'
         }
       ],
+      blog:[
+        {
+          title: 'Amazon gets CCI nod to acquire 49% stake in',
+          text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.',
+          date: 'April 21, 2019',
+          by: 'Paul'
+        },
+        {
+          title: 'Clearing Corporations get SEBI nod to invest in overnight funds',
+          text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.',
+          date: 'April 21, 2019',
+          by: 'Paul'
+        },
+        {
+          title: 'Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away in London',
+          text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.',
+          date: 'April 21, 2019',
+          by: 'Paul'
+        }
+      ],
       social:[
         'instagram',
         'linkedin-in',
