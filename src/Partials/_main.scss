@@ -368,7 +368,7 @@
 
       > div{
         position: relative;
-        margin: 50px 0;
+        margin: 40px 0 25px;
 
         i{
           background: linear-gradient(0deg, rgba(249,99,107,1) 0%, rgba(182,36,110,1) 100%);
@@ -379,7 +379,13 @@
         p{
           font-size: 200px;
           font-style: italic;
+          width: 100%;
           position: absolute;
+          top: -57px;
+          right: 59%;
+          transform: translateX(50%);
+          z-index: -1;
+          color: rgba(0,0,0,.1);
         }
       }
 

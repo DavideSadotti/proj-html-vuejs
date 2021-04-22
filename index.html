@@ -80,7 +80,9 @@
           </div>
         </div>
       </div>
-      <div class="portfolio"></div>
+      <div class="portfolio">
+        
+      </div>
       <div class="priceList">
         <div>
           <p>Price List</p>
@@ -140,7 +142,7 @@
             <img :src="item.image">
             <div>
               <i v-for="n in 5" class="fa-star" :class="n <= item.rate ? 'fas' : 'far'"></i>
-              <!-- <p>"</p> -->
+              <p>"</p>
             </div>
             <p>{{ item.text }}</p>
             <h4>{{ item.who }}</h4>

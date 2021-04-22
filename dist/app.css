@@ -112,7 +112,7 @@ header .jumbotron > div h1 span {
 }
 header .jumbotron > div p {
   margin: 50px 0;
-  color: #03A7D3E6;
+  color: #f4f4f4;
 }
 
 .whatWe {
@@ -197,7 +197,7 @@ header .jumbotron > div p {
   font-weight: lighter;
 }
 .growBusiness > div > div:last-of-type p:last-of-type {
-  color: #03A7D3E6;
+  color: #f4f4f4;
   font-weight: lighter;
   margin: 50px 0;
 }
@@ -418,7 +418,7 @@ header .jumbotron > div p {
 }
 .testimonial > div:nth-child(2) > div > div {
   position: relative;
-  margin: 50px 0;
+  margin: 40px 0 25px;
 }
 .testimonial > div:nth-child(2) > div > div i {
   background: linear-gradient(0deg, #f9636b 0%, #b6246e 100%);
@@ -428,7 +428,13 @@ header .jumbotron > div p {
 .testimonial > div:nth-child(2) > div > div p {
   font-size: 200px;
   font-style: italic;
+  width: 100%;
   position: absolute;
+  top: -57px;
+  right: 59%;
+  transform: translateX(50%);
+  z-index: -1;
+  color: rgba(0, 0, 0, 0.1);
 }
 .testimonial > div:nth-child(2) > div h4 {
   margin: 25px 0 10px;
