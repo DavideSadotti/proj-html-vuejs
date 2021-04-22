@@ -8,12 +8,15 @@ body {
   color: #0C0C0C;
   font-family: "Poppins", sans-serif;
 }
+body button {
+  outline: none;
+}
 
 header, footer, .growBusiness {
   background: linear-gradient(0deg, #01012f 10%, #0b1953 100%);
 }
 
-header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type, .blog, .testimonial {
+header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type, .blog, .testimonial, .portfolio > div:first-of-type {
   max-width: 1840px;
   padding: 0 100px;
   margin: auto;
@@ -200,6 +203,74 @@ header .jumbotron > div p {
   color: #f4f4f4;
   font-weight: lighter;
   margin: 50px 0;
+}
+
+.portfolio {
+  position: relative;
+}
+.portfolio > div:first-of-type {
+  margin: 100px 0 0;
+}
+.portfolio > div:first-of-type p {
+  color: #F9636B;
+}
+.portfolio > div:first-of-type h2 {
+  font-size: 50px;
+}
+.portfolio > div:first-of-type h2 span {
+  font-weight: lighter;
+}
+.portfolio .glide__slides {
+  display: flex;
+  overflow: auto;
+  padding: 100px 0;
+}
+.portfolio .glide__slides .glide__slide {
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.5);
+  margin: 0 20px !important;
+}
+.portfolio .glide__slides .glide__slide > div:first-of-type img {
+  border-radius: 25px;
+  width: 100%;
+}
+.portfolio .glide__slides .glide__slide > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.portfolio .glide__slides::-webkit-scrollbar {
+  display: none;
+}
+.portfolio .glide__bullets {
+  text-align: center;
+  margin: 0 0 100px;
+}
+.portfolio .glide__bullets button {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 2px;
+}
+.portfolio .glide__bullets .glide__bullet--active {
+  background-color: #B6246E;
+}
+.portfolio .glide__arrows {
+  position: absolute;
+  top: -50px;
+  right: 100px;
+}
+.portfolio .glide__arrows button {
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #F9636B;
+  padding: 10px 13px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #F9636B;
+  margin-left: 25px;
+  outline: none;
 }
 
 .priceList {
@@ -526,6 +597,24 @@ footer .link > div li {
 }
 footer .link > div li span {
   color: white;
+}
+footer .link button {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #B6246E;
+  z-index: 20;
+}
+footer .link button i {
+  color: white;
+}
+footer .link button:hover {
+  background-color: #F9636B;
 }
 footer .copyright {
   display: flex;

@@ -32,6 +32,33 @@ var app = new Vue(
           text: 'When, while the lovely valley teems with vapour around meand the meridian sun strike the upper surface.'
         }
       ],
+      portfolio:[
+        {
+          image: 'img/dazzle.jpg',
+          title: 'Basketo of Flower on table',
+          text: 'Branding Strategy'
+        },
+        {
+          image: 'img/dry.jpg',
+          title: 'Purinky Products',
+          text: 'Digital Experience'
+        },
+        {
+          image: 'img/index.jpg',
+          title: 'Satisfy Poster',
+          text: 'Branding Strategy'
+        },
+        {
+          image: 'img/mock-up.jpg',
+          title: 'Mock-up',
+          text: 'Design Strategy'
+        },
+        {
+          image: 'img/index.jpg',
+          title: 'IndexTv',
+          text: 'Digital Experience'
+        }
+      ],
       priceList:[
         {
           title: 'Designing',
@@ -153,6 +180,9 @@ var app = new Vue(
             this.blog[i].isActive = false
           }
         }
+      },
+      topFunction: function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
       }
     }
   }

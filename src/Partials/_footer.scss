@@ -90,6 +90,27 @@ footer{
         }
       }
     }
+
+    button{
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+      padding: 10px 14px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: $pinkColor;
+      z-index: 20;
+
+      i{
+        color: white;
+      }
+    }
+
+    button:hover{
+      background-color: $orangeColor;
+    }
   }
 
   .copyright{

@@ -14,6 +14,7 @@
   <!-- STYLE CSS -->
   <link rel="stylesheet" href="dist/app.js">
   <link rel="stylesheet" href="dist/app.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
   <title>Phlox Corporate</title>
 </head>
 <body>
@@ -48,6 +49,7 @@
 
     <!-- CORPO DELLA PAGINA -->
     <main>
+      <!-- SECTION 1 -->
       <div class="whatWe">
         <div>
           <p>Our Services</p>
@@ -63,6 +65,8 @@
         </div>
         <button type="button">View All Services</button>
       </div>
+
+      <!-- SECTION 2 -->
       <div class="growBusiness">
         <div>
           <div>
@@ -80,9 +84,53 @@
           </div>
         </div>
       </div>
+
+      <!-- SECTION 3 -->
       <div class="portfolio">
-        
+        <div>
+          <div>
+            <p>Portfolio</p>
+            <h2>latest <span>work</span></h2>
+          </div>
+        </div>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+              <div v-for="item in portfolio" class="glide__slide">
+                <div>
+                  <img :src="item.image">
+                </div>
+                <div>
+                  <h4>{{ item.title }}</h4>
+                  <p>{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+          </div>
+          <!-- <div class="bullet">
+            <i class="fas fa-circle" v-for="(item, i) in portfolio" :class="item.imageIndex == i ? 'active' : ''"></i>
+          </div> -->
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fas fa-long-arrow-alt-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </div>
+        </div>
       </div>
+
+      <!-- SECTION 4 -->
       <div class="priceList">
         <div>
           <p>Price List</p>
@@ -112,6 +160,8 @@
           </div>
         </div>
       </div>
+
+      <!-- SECTION 5 -->
       <div class="blog">
         <div>
           <p>Blog</p>
@@ -131,6 +181,8 @@
           </div>
         </div>
       </div>
+
+      <!-- SECTION 6 -->
       <div class="testimonial">
         <div>
           <p>Testimonial</p>
@@ -153,6 +205,7 @@
           <img v-for="item in client" :src="item">
         </div>
       </div>
+
     </main>
 
     <!-- PIE' DI PAGINA -->
@@ -193,6 +246,11 @@
               <li v-for="(item, name) in contact"><span>{{ toCapitalize(name) }}:</span> {{ item }}</li>
             </ul>
           </div>
+
+          <!-- GO TO TOP -->
+          <button @click="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-long-arrow-alt-up"></i>
+          </button>
         </div>
         <div class="copyright">
           <div>
@@ -209,5 +267,17 @@
 
   <!-- JAVASCRIPT -->
   <script src="js/script.js"></script>
+
+  <!-- GLIDE JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    const config = {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3.5
+    };
+
+    new Glide('.glide', config).mount();
+  </script>
 </body>
 </html>
