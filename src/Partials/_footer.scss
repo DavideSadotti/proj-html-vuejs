@@ -93,14 +93,11 @@ footer{
 
     button{
       position: absolute;
-      right: 50px;
-      bottom: 50px;
-      padding: 10px 14px;
+      right: 40px;
       border-radius: 50%;
       border: none;
       outline: none;
       cursor: pointer;
-      background-color: $pinkColor;
       z-index: 20;
 
       i{
@@ -108,8 +105,24 @@ footer{
       }
     }
 
-    button:hover{
-      background-color: $orangeColor;
+    button:first-of-type{
+      bottom: 50px;
+      padding: 12px 16px;
+      background: linear-gradient(0deg, rgba(249,99,107,1) 0%, rgba(182,36,110,1) 100%);
+    }
+
+    button:last-of-type{
+      bottom: 100px;
+      padding: 13px 14px;
+      background: linear-gradient(0deg, rgba(182,36,110,1) 0%, rgba(249,99,107,1) 100%);
+    }
+
+    button:first-of-type:hover{
+      background: linear-gradient(0deg, rgba(182,36,110,1) 0%, rgba(249,99,107,1) 100%);
+    }
+
+    button:last-of-type:hover{
+      background: linear-gradient(0deg, rgba(249,99,107,1) 0%, rgba(182,36,110,1) 100%);
     }
   }
 
