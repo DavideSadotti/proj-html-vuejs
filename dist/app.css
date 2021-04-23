@@ -57,6 +57,7 @@ header > div:first-of-type {
   position: fixed;
   width: 100%;
   background: linear-gradient(0deg, #0b1953 0%, #173270 70%);
+  z-index: 30;
 }
 header > div:first-of-type .navbar {
   display: flex;
@@ -95,6 +96,9 @@ header > div:first-of-type .navbar button {
 }
 header > div:first-of-type .navbar button:hover {
   background: linear-gradient(90deg, #1e3d82 0%, #03a7d3 100%);
+}
+header > div:last-of-type {
+  padding-top: 100px;
 }
 header .jumbotron {
   background-image: url("../img/jumbotron.png");

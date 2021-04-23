@@ -55,6 +55,10 @@ header{
     }
   }
 
+  > div:last-of-type{
+    padding-top: 100px;
+  }
+
 
   .jumbotron{
       background-image: url('../img/jumbotron.png');
