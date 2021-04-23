@@ -16,7 +16,7 @@ header, footer, .growBusiness {
   background: linear-gradient(0deg, #01012f 10%, #0b1953 100%);
 }
 
-header > div, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type, .blog, .testimonial, .portfolio > div:first-of-type {
+.navbar, header > div:last-of-type, footer > div, .whatWe, .growBusiness > div, .priceList > div:last-of-type, .blog, .testimonial, .portfolio > div:first-of-type {
   max-width: 1840px;
   padding: 0 100px;
   margin: auto;
@@ -53,32 +53,37 @@ header {
   color: white;
   height: 100vh;
 }
-header .navbar {
+header > div:first-of-type {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(0deg, #0b1953 0%, #173270 70%);
+}
+header > div:first-of-type .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   font-size: 18px;
 }
-header .navbar img, header .navbar li, header .navbar button {
+header > div:first-of-type .navbar img, header > div:first-of-type .navbar li, header > div:first-of-type .navbar button {
   cursor: pointer;
 }
-header .navbar ul {
+header > div:first-of-type .navbar ul {
   display: inline-block;
 }
-header .navbar ul li {
+header > div:first-of-type .navbar ul li {
   display: inline;
   margin: 0 15px;
   font-weight: lighter;
 }
-header .navbar ul li:hover {
+header > div:first-of-type .navbar ul li:hover {
   color: #F9636B;
 }
-header .navbar ul li:first-of-type {
+header > div:first-of-type .navbar ul li:first-of-type {
   font-weight: bold;
   color: #F9636B;
 }
-header .navbar button {
+header > div:first-of-type .navbar button {
   display: inline-block;
   color: white;
   font-size: 18px;
@@ -88,7 +93,7 @@ header .navbar button {
   background: linear-gradient(90deg, #03a7d3 0%, #1e3d82 100%);
   margin-left: 30px;
 }
-header .navbar button:hover {
+header > div:first-of-type .navbar button:hover {
   background: linear-gradient(90deg, #1e3d82 0%, #03a7d3 100%);
 }
 header .jumbotron {
